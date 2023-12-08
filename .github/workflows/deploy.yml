@@ -25,7 +25,7 @@ jobs:
         run: 
           npm run build
           # yarn build 打包命令
-      - name: Git config email
+      # - name: Git config email
       # 如果权限问题，可能是勾选不对，如果勾选对了，可以试试加上下面的配置。
       #   run:
       #     git config --global user.email "xxx@qq.com"
