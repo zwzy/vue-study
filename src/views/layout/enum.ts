@@ -3,7 +3,6 @@ export const vueMenuList = [
   {
     key: 'basic',
     name: '基础',
-    path: '/basic/bindClassAndStyle',
     children: [
       { key: 'bindClassAndStyle', name: '类与样式绑定', path: '/basic/bindClassAndStyle' },
       { key: 'ventHandling', name: '事件处理', path: '/basic/eventHandling' },
@@ -13,12 +12,12 @@ export const vueMenuList = [
   {
     key: 'deepComponent',
     name: '深入组件',
-    path: '/deepComponent/slot',
     children: [{ key: 'slot', name: '插槽', path: '/deepComponent/slot' }]
   },
   {
-    key: '3',
-    name: '逻辑复用'
+    key: 'logicReuse',
+    name: '逻辑复用',
+    children: [{ key: 'composables', name: '组合式函数', path: '/logicReuse/composables' }]
   },
   {
     key: '4',

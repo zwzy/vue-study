@@ -32,5 +32,17 @@ export const routerVue = [
         component: () => import('../views/vue/deepComponent/Slot.vue')
       }
     ]
+  },
+  {
+    path: 'logicReuse',
+    name: 'LogicReuse',
+    redirect: 'composables',
+    children: [
+      {
+        path: 'composables',
+        name: 'Composables',
+        component: () => import('../views/vue/logicReuse/composables.vue')
+      }
+    ]
   }
 ];
