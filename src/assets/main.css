@@ -13,6 +13,14 @@ a,
   transition: 0.4s;
 }
 
+.red {
+  color: red;
+}
+
+.bold{
+  font-weight: bold;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);

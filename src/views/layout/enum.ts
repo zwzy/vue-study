@@ -1,15 +1,20 @@
-export const navList = [
+// vue菜单
+export const vueMenuList = [
   {
-    key: '1',
+    key: 'basic',
     name: '基础',
+    path: '/basic/bindClassAndStyle',
     children: [
-      { key: '1-1', name: '类与样式绑定', path: '/basic-bindClassAndStyle' },
-      { key: '1-2', name: '事件处理', path: '/basic-eventHandling' }
+      { key: 'bindClassAndStyle', name: '类与样式绑定', path: '/basic/bindClassAndStyle' },
+      { key: 'ventHandling', name: '事件处理', path: '/basic/eventHandling' },
+      { key: 'ref', name: '模板引用ref', path: '/basic/ref' }
     ]
   },
   {
-    key: '2',
-    name: '深入组件'
+    key: 'deepComponent',
+    name: '深入组件',
+    path: '/deepComponent/slot',
+    children: [{ key: 'slot', name: '插槽', path: '/deepComponent/slot' }]
   },
   {
     key: '3',
@@ -22,5 +27,19 @@ export const navList = [
   {
     key: '5',
     name: '应用规模化'
+  }
+];
+
+// 外层菜单
+export const menuList = [
+  {
+    key: 'vue',
+    name: 'Vue',
+    children: vueMenuList
   },
-]
+  {
+    key: 'react',
+    name: 'React',
+    children: []
+  }
+];

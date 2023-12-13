@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from '../views/layout/Layout.vue'
+import { routerVue } from './routerVue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL), // vite中需要加module: 'EsNext' 不然会有ts类型
@@ -8,20 +9,13 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Layout,
-      children: [
-        {
-          path: 'basic-bindClassAndStyle',
-          name: 'BasicBindClassAndStyle',
-          component: () => import('../views/basic/BindClassAndStyle.vue')
-        },
-        {
-          path: 'basic-eventHandling',
-          name: 'BasicEventHandling',
-          component: () => import('../views/basic/EventHandling.vue')
-        }
-        
-      ]
+      children: [...routerVue]
     },
+    {
+      path: '/404',
+      name: 'Page404',
+      component: () => import('../views/layout/ResultPage404.vue')
+    }
     // {
     //   path: '/login',
     //   name: 'about',
