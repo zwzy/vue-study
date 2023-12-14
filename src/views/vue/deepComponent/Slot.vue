@@ -13,12 +13,12 @@
       <a-card title="作用域插槽">
         <SlotScope>
           <template #header="{ age }: any">
-            >父组件作用域插槽Header需要用到子组件的age: {{ age }}
+            父组件作用域插槽Header需要用到子组件的age: {{ age }}
           </template>
           <!-- defalut -->
           注意Ts类型 #header="slotProps: any"
           <template v-slot:footer="{ sex }: any">
-            >父组件具名插槽footer 访问子组件的性别为：{{ sex }}</template
+            父组件具名插槽footer 访问子组件的性别为：{{ sex }}</template
           >
         </SlotScope>
       </a-card>

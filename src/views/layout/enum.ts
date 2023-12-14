@@ -17,7 +17,10 @@ export const vueMenuList = [
   {
     key: 'logicReuse',
     name: '逻辑复用',
-    children: [{ key: 'composables', name: '组合式函数', path: '/logicReuse/composables' }]
+    children: [
+      { key: 'composables', name: '组合式函数', path: '/logicReuse/composables' },
+      { key: 'customDirective', name: '自定义指令', path: '/logicReuse/customDirective' }
+    ]
   },
   {
     key: '4',

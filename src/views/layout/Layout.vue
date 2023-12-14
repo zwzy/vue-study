@@ -54,8 +54,8 @@ const router = useRouter();
 const route = useRoute();
 
 // 刷新保持当前选中的菜单
-const selectedKeys1 = ref<string[]>([route.path.split('/')[1]] || ['basic']);
-const selectedKeys2 = ref<string[]>([route.path.split('/')[2]] || ['bindClassAndStyle']);
+const selectedKeys1 = ref<string[]>([route.path.split('/')[1] || 'basic']);
+const selectedKeys2 = ref<string[]>([route.path.split('/')[2] || 'bindClassAndStyle']);
 // 第一级菜单，用来显示面包屑 vue react 名称
 const activeMenu = computed(
   () =>
@@ -80,7 +80,7 @@ const activeSubMenuItem = computed(
   () =>
     menuSubItemList.value.find((item) => item.key === selectedKeys2.value[0]) || {
       name: '--',
-      path: '/404'
+      path: ''
     }
 );
 

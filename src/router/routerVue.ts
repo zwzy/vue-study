@@ -42,6 +42,11 @@ export const routerVue = [
         path: 'composables',
         name: 'Composables',
         component: () => import('../views/vue/logicReuse/Composables.vue')
+      },
+      {
+        path: 'customDirective',
+        name: 'CustomDirective',
+        component: () => import('../views/vue/logicReuse/CustomDirective.vue')
       }
     ]
   }

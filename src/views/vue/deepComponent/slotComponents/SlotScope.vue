@@ -3,10 +3,12 @@
     <header>
       <slot name="header" :age="age"></slot>
     </header>
+    <a-divider></a-divider>
     <div class="red bold">
       <slot name="default"></slot>
       子组件 #name === v-slot:name
     </div>
+    <a-divider></a-divider>
     <footer>
       <slot name="footer" :sex="sex"></slot>
     </footer>
