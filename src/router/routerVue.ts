@@ -41,7 +41,7 @@ export const routerVue = [
       {
         path: 'composables',
         name: 'Composables',
-        component: () => import('../views/vue/logicReuse/composables.vue')
+        component: () => import('../views/vue/logicReuse/Composables.vue')
       }
     ]
   }
