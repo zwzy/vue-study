@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { useFetch } from '@/composables/useFetch.ts';
+import { useFetch } from '@/composables/useFetch';
 const { data, error } = useFetch('/getUserInfo');
 console.log(data, error);
 </script>
