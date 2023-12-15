@@ -49,5 +49,53 @@ export const routerVue = [
         component: () => import('../views/vue/logicReuse/CustomDirective.vue')
       }
     ]
+  },
+  {
+    path: 'applicatonModularization',
+    name: 'ApplicatonModularization',
+    redirect: 'stateManagement',
+    children: [
+      {
+        path: 'stateManagement',
+        name: 'StateManagement',
+        component: () => import('../views/vue/applicatonModularization/StateManagement.vue')
+      }
+    ]
+  },
+  {
+    path: 'compositeApi',
+    name: 'CompositeApi',
+    children: [
+      {
+        path: 'basic',
+        name: 'Basic',
+        component: () => import('../views/vue/compositeApi/Basic.vue')
+      },
+      {
+        path: 'core',
+        name: 'Core',
+        component: () => import('../views/vue/compositeApi/Core.vue')
+      },
+      {
+        path: 'tool',
+        name: 'Tool',
+        component: () => import('../views/vue/compositeApi/Tool.vue')
+      },
+      {
+        path: 'upgrade',
+        name: 'Upgrade',
+        component: () => import('../views/vue/compositeApi/Upgrade.vue')
+      },
+      {
+        path: 'lifecycleHook',
+        name: 'LifecycleHook',
+        component: () => import('../views/vue/compositeApi/LifecycleHook.vue')
+      },
+      {
+        path: 'dependencyInjection',
+        name: 'DependencyInjection',
+        component: () => import('../views/vue/compositeApi/DependencyInjection.vue')
+      }
+    ]
   }
 ];

@@ -27,8 +27,52 @@ export const vueMenuList = [
     name: '内置组件'
   },
   {
-    key: '5',
-    name: '应用规模化'
+    key: 'applicatonModularization',
+    name: '应用规模化',
+    children: [
+      {
+        key: 'stateManagement',
+        name: '状态管理',
+        path: '/applicatonModularization/stateManagement'
+      }
+      // { key: 'customDirective', name: '自定义指令', path: '/logicReuse/customDirective' }
+    ]
+  },
+  {
+    key: 'compositeApi',
+    name: '组合式API',
+    children: [
+      {
+        key: 'basic',
+        name: '基础',
+        path: '/compositeApi/basic'
+      },
+      {
+        key: 'core',
+        name: '核心',
+        path: '/compositeApi/core'
+      },
+      {
+        key: 'tool',
+        name: '工具',
+        path: '/compositeApi/tool'
+      },
+      {
+        key: 'upgrade',
+        name: '进阶',
+        path: '/compositeApi/upgrade'
+      },
+      {
+        key: 'lifecycleHook',
+        name: '生命周期钩子',
+        path: '/compositeApi/lifecycleHook'
+      },
+      {
+        key: 'dependencyInjection',
+        name: '依赖注入',
+        path: '/compositeApi/dependencyInjection'
+      }
+    ]
   }
 ];
 

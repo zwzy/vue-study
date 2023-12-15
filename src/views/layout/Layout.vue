@@ -38,9 +38,7 @@
         </a-layout-content>
       </a-layout>
     </a-layout-content>
-    <a-layout-footer style="text-align: center">
-      web study 2023 created by zwAndlss
-    </a-layout-footer>
+    <a-layout-footer style="text-align: center"> web study 2023 created </a-layout-footer>
   </a-layout>
 </template>
 <script lang="ts" setup>
