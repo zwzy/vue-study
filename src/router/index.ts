@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Layout from '../views/layout/Layout.vue'
-import { routerVue } from './routerVue'
+import { createRouter, createWebHistory } from 'vue-router';
+import Layout from '../views/layout/Layout.vue';
+import { routerVue } from './routerVue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL), // vite中需要加module: 'EsNext' 不然会有ts类型
@@ -25,6 +25,6 @@ const router = createRouter({
     //   component: () => import('../views/AboutView.vue')
     // }
   ]
-})
+});
 
-export default router
+export default router;

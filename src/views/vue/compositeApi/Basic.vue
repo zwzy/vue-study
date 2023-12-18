@@ -16,6 +16,8 @@ import type { log } from 'console';
           message="用法：子组件的setup(props, context)函数中使用 context.expose({ age })"
         ></a-alert>
         <a-divider></a-divider>
+        <a-alert :message="`已获取到子组件的Age: ${childAge}`"></a-alert>
+        <a-divider></a-divider>
         <ChildBase1 ref="childBase1"></ChildBase1>
       </a-card>
     </a-flex>
@@ -33,6 +35,12 @@ export default {
     }
   },
   components: { ChildBase1 },
+  computed: {
+    childAge() {
+      const childBase1Ele: any = this.$refs.childBase1;
+      return childBase1Ele.childAge;
+    }
+  },
   data() {
     return {
       age: 100
