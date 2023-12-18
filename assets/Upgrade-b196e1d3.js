@@ -1,1 +1,0 @@
-import{_ as c,r as e,h as n,a,w as s,o as _}from"./index-f7d5edba.js";const r={},d={class:"page"};function l(p,f){const t=e("a-card"),o=e("a-flex");return _(),n("div",d,[a(o,{gap:"middle"},{default:s(()=>[a(t,{title:""})]),_:1})])}const m=c(r,[["render",l]]);export{m as default};

@@ -1,0 +1,1 @@
+import{_ as c,r as e,o as n,h as s,a as o,w as _}from"./index-b23b64a1.js";const r={},l={class:"page"};function d(f,i){const t=e("a-card"),a=e("a-flex");return n(),s("div",l,[o(a,{gap:"middle"},{default:_(()=>[o(t,{title:""})]),_:1})])}const m=c(r,[["render",d]]);export{m as default};
